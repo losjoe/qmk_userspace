@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,            _______,
      _______,    KC_LT,    KC_GT,  KC_LBRC,  KC_RBRC,   KC_DLR,  KC_PIPE,  KC_KP_7,  KC_KP_8,  KC_KP_9,  KC_PMNS,  KC_PAST,  _______,  _______,            _______,
      _______,  KC_LCBR,  KC_RCBR,  KC_LPRN,  KC_RPRN,  KC_EXLM,  KC_CALC,  KC_KP_4,  KC_KP_5,  KC_KP_6,  KC_PPLS,  KC_PSLS,            _______,            _______,
-     _______,  KC_AMPR,  KC_CIRC,    KC_AT,  KC_HASH,  KC_MINS,  KC_PERC,  KC_KP_1,  KC_KP_2,  KC_KP_3,   KC_DOT,  _______,            _______,  _______,  _______,
+     _______,            KC_AMPR,  KC_CIRC,    KC_AT,  KC_HASH,  KC_PERC,  KC_KP_1,  KC_KP_2,  KC_KP_3,   KC_DOT,  _______,            _______,  _______,  _______, 
      _______,  _______,  _______,                        _______,                                        KC_KP_0,  _______,  _______,  _______,  _______,  _______),
 	 
 [MOD1] = LAYOUT_ansi_84(
@@ -88,15 +88,18 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     return true;
 }
 
-uint32_t layer_state_set_user(uint32_t state) {
-  switch(biton32(state)) {
-  case EXTEND:
-    // turn on numlock, if it isn't already on.
-    if (!(host_keyboard_leds() & (1<<USB_LED_NUM_LOCK))) {
-      register_code(KC_NUMLOCK);
-      unregister_code(KC_NUMLOCK);
+// turn on num lock if it's not already on
+layer_state_t layer_state_set_user(layer_state_t state) {
+    led_t led_state = host_keyboard_led_state();
+    bool g_num_lock_state = led_state.num_lock;
+
+    switch(get_highest_layer(state)) {
+        // replace number with your num lock layer number
+        case 3:
+        if (!g_num_lock_state) {
+            tap_code(KC_NUM_LOCK);
+        }
+        break;
     }
-    break;
-  }
-  return state;
+    return state;
 };
