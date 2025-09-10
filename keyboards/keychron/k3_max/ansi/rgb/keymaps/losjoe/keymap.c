@@ -29,28 +29,28 @@ enum layers {
 // clang-format off
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [QWERTY] = LAYOUT_ansi_84(
-     KC_ESC,      KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   KC_PSCR,  KC_DEL,   _______,
+     KC_ESC,      KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   KC_PSCR,  KC_DEL,   KC_CAPS,
      KC_GRV,      KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_MINS,  KC_EQL,   KC_BSPC,            KC_PGUP,
      KC_TAB,      KC_Q,     KC_W,     KC_E,     KC_R,     KC_T,     KC_Y,     KC_U,     KC_I,     KC_O,     KC_P,     KC_LBRC,  KC_RBRC,  KC_BSLS,            KC_PGDN,
      LT(EXTEND, KC_BSPC),  KC_A,     KC_S,     KC_D,     KC_F,     KC_G,     KC_H,     KC_J,     KC_K,     KC_L,     KC_SCLN,  KC_QUOT,            KC_ENT,             KC_HOME,
-     KC_LSFT,               KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,     KC_N,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,            KC_RSFT,  KC_UP,    KC_END,
-     KC_LCTL,     KC_LALT,  KC_LGUI,                                LT(SYM, KC_SPC),                                 MO(MOD1), MO(MOD2), KC_CAPS,  KC_LEFT,  KC_DOWN,  KC_RGHT),
+     KC_LSFT,               KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,     KC_N,     KC_M,     KC_COMM,  KC_DOT,   KC_SLSH,            CW_TOGG,  KC_UP,    KC_END,
+     KC_LGUI,     KC_LALT,  KC_LCTL,                                LT(SYM, KC_SPC),                                 MO(MOD1), MO(MOD2), _______,  KC_LEFT,  KC_DOWN,  KC_RGHT),
 
 [EXTEND] = LAYOUT_ansi_84(
-     _______,  _______,  _______,  _______,   _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
-     _______,  _______,  KC_MPRV,  KC_MSTP,   KC_MPLY,  KC_MNXT,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,            _______,
-     _______,  _______,  KC_UNDO,  KC_PAUS,LCTL(KC_Y),  _______,  _______,  _______,  KC_PGUP,  KC_WBAK,  KC_WREF,  _______,  _______,  _______,            _______,
-     _______,  _______,   KC_CUT,  KC_COPY,   KC_PSTE,  _______,  _______,  KC_PGDN,  KC_WFWD,  KC_WHOM,  _______,  _______,            _______,            _______,
-     _______,            _______,  KC_MUTE,  KC_VOLD,   KC_VOLU,  _______,  _______,   KC_APP,  KC_MYCM,  KC_MAIL,  _______,            _______,  _______,  _______,
-     _______,  _______,  _______,                                _______,                                _______,  _______,  _______,  _______,  _______,  _______),
+     _______,  _______,  _______,  _______,   _______,   _______,  _______,  _______,      _______,       _______,      _______,      _______,     _______,  _______,  _______,  _______,
+     _______,  _______,  KC_MPRV,  KC_MSTP,   KC_MPLY,   KC_MNXT,  _______,  _______,      _______,       _______,      _______,      _______,     _______,  _______,            _______,
+     _______,  _______,  KC_UNDO,  KC_PAUS,LCTL(KC_Y),LTCL(KC_A),  _______,  _______,      KC_PGUP,  LCS(KC_LEFT),LCS(KC_RIGHT),LSFT(KC_HOME),LSFT(KC_END),  _______,            _______,
+     _______,  _______,   KC_CUT,  KC_COPY,   KC_PSTE,LCTL(KC_F),  _______,  KC_PGDN,LCTL(KC_LEFT),LCTL(KC_RIGHT),      KC_HOME,       KC_END,               _______,            _______,
+     _______,            _______,  KC_MUTE,   KC_VOLD,   KC_VOLU,  _______,  _______,       KC_APP,       KC_MYCM,      KC_MAIL,      _______,               _______,  _______,  _______,
+     _______,  _______,  _______,                                  _______,                               _______,      _______,      _______,               _______,  _______,  _______),
 
 [COLEMAK] = LAYOUT_ansi_84(
-     KC_ESC,      KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   KC_PSCR,  KC_DEL,   _______,
+     KC_ESC,      KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12,   KC_PSCR,  KC_DEL,   KC_CAPS,
      KC_GRV,      KC_1,     KC_2,     KC_3,     KC_4,     KC_5,     KC_6,     KC_7,     KC_8,     KC_9,     KC_0,     KC_MINS,  KC_EQL,   KC_BSPC,            KC_PGUP,
      KC_TAB,      KC_Q,     KC_W,     KC_F,     KC_P,     KC_B,     KC_J,     KC_L,     KC_U,     KC_Y,     KC_SCLN,  KC_LBRC,  KC_RBRC,  KC_BSLS,            KC_PGDN,
      LT(EXTEND, KC_BSPC),  KC_A,     KC_R,     KC_S,     KC_T,     KC_G,     KC_M,     KC_N,     KC_E,     KC_I,     KC_O,     KC_QUOT,            KC_ENT,             KC_HOME,
-     KC_LSFT,               KC_X,     KC_C,     KC_D,     KC_V,     KC_Z,     KC_K,     KC_H,     KC_COMM,  KC_DOT,   KC_SLSH,            KC_RSFT,  KC_UP,    KC_END,
-     KC_LCTL,     KC_LALT,  KC_LGUI,                                LT(SYM, KC_SPC),                                 MO(MOD1), MO(MOD2), KC_CAPS,  KC_LEFT,  KC_DOWN,  KC_RGHT),
+     KC_LSFT,               KC_X,     KC_C,     KC_D,     KC_V,     KC_Z,     KC_K,     KC_H,     KC_COMM,  KC_DOT,   KC_SLSH,            CW_TOGG,  KC_UP,    KC_END,
+     KC_LGUI,     KC_LALT,  KC_LCTL,                                LT(SYM, KC_SPC),                                 MO(MOD1), MO(MOD2), _______,  KC_LEFT,  KC_DOWN,  KC_RGHT),
 
 [SYM] = LAYOUT_ansi_84(
      _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,  _______,
