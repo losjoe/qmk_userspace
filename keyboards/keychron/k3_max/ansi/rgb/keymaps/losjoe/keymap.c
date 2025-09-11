@@ -39,8 +39,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [EXTEND] = LAYOUT_ansi_84(
      _______,  _______,  _______,  _______,   _______,   _______,  _______,  _______,      _______,       _______,      _______,      _______,     _______,  _______,  _______,  _______,
      _______,  _______,  KC_MPRV,  KC_MSTP,   KC_MPLY,   KC_MNXT,  _______,  _______,      _______,       _______,      _______,      _______,     _______,  _______,            _______,
-     _______,  _______,  LCTL(KC_Z),  KC_PAUS, LCTL(KC_Y), LCTL(KC_A),  KC_PGUP,  LSFT(LCTL(KC_LEFT)), LSFT(LCTL(KC_RGHT)), LSFT(KC_HOME), LSFT(KC_END), _______, _______, _______,            _______,
-     _______,  _______,   LCTL(KC_X),  LCTL(KC_C),   LCTL(KC_V), LCTL(KC_F),  KC_PGDN, LCTL(KC_LEFT), LCTL(KC_RGHT),      KC_HOME,       KC_END,             _______,            _______, _______,
+     _______,  _______,  LCTL(KC_Z),  KC_PAUS, LCTL(KC_Y), LCTL(KC_A),  KC_PGUP,  LSFT(LCTL(KC_LEFT)), LSFT(LCTL(KC_RGHT)), LSFT(KC_HOME), LSFT(KC_END), LSFT(LALT(KC_LEFT)), LSFT(LALT(KC_RGHT)), _______,            _______,
+     _______,  _______,   LCTL(KC_X),  LCTL(KC_C),   LCTL(KC_V), LCTL(KC_F),  KC_PGDN, LCTL(KC_LEFT), LCTL(KC_RGHT),      KC_HOME,       KC_END,             LALT(KC_LEFT),            LALT(KC_RGHT), _______,
      _______,            _______,  KC_MUTE,   KC_VOLD,   KC_VOLU,  _______,         KC_APP,       KC_MYCM,      KC_MAIL,      _______,               _______,_______,  _______,  _______,
      _______,  _______,  _______,                                  _______,                               _______,      _______,      _______,               _______,  _______,  _______),
 
