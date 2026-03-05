@@ -1,0 +1,171 @@
+Installation home directory: file:///C:/Users/losjo/AppData/Local/Programs/Rider
+System directory: file:///C:/Users/losjo/AppData/Local/JetBrains/Rider2025.3
+Config directory: file:///C:/Users/losjo/AppData/Roaming/JetBrains/Rider2025.3
+Log directory: file:///C:/Users/losjo/AppData/Local/JetBrains/Rider2025.3/log
+Debug | ByteBufferAsyncProcessor  | 94:DefaultDispatcher-worker-45 | PAUSE ('Socket not connected') :: {id = FrontendToBackend/Sender, state = 'Initialized'} 
+Debug | Server                    | 107:FrontendToBackend | FrontendToBackend: listening /127.0.0.1:61346 
+Installation home directory: file:///C:/Users/losjo/AppData/Local/Programs/Rider
+System directory: file:///C:/Users/losjo/AppData/Local/JetBrains/Rider2025.3
+Config directory: file:///C:/Users/losjo/AppData/Roaming/JetBrains/Rider2025.3
+Log directory: file:///C:/Users/losjo/AppData/Local/JetBrains/Rider2025.3/log
+nDescriptor(name=GitLab, id=org.jetbrains.plugins.gitlab, version=251.25410.159-IU, isBundled=false, path=~\AppData\Roaming\JetBrains\Rider2025.3\plugins\vcs-gitlab-IU) [Plugin: org.jetbrains.plugins.gitlab]
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl$Companion.logUnexpectedElement$intellij_platform_core_impl(IdeaPluginDescriptorImpl.kt:221)
+	at com.intellij.ide.plugins.ContentModuleDescriptor._init_$lambda$0(IdeaPluginDescriptorImpl.kt:645)
+	at com.intellij.ide.plugins.IdeaPluginDescriptorImpl$Companion.reportSubDescriptorUnexpectedElements$intellij_platform_core_impl(IdeaPluginDescriptorImpl.kt:237)
+	at com.intellij.ide.plugins.ContentModuleDescriptor$Companion.reportContentModuleUnexpectedElements(IdeaPluginDescriptorImpl.kt:678)
+	at com.intellij.ide.plugins.ContentModuleDescriptor.<init>(IdeaPluginDescriptorImpl.kt:645)
+	at com.intellij.ide.plugins.PluginMainDescriptor.createContentModule$intellij_platform_core_impl(IdeaPluginDescriptorImpl.kt:450)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadPluginSubDescriptors(PluginDescriptorLoader.kt:237)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromStream(PluginDescriptorLoader.kt:191)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar(PluginDescriptorLoader.kt:138)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromJar$default(PluginDescriptorLoader.kt:121)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadFromPluginDir(PluginDescriptorLoader.kt:329)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir(PluginDescriptorLoader.kt:278)
+	at com.intellij.ide.plugins.PluginDescriptorLoader.loadDescriptorFromFileOrDir$default(PluginDescriptorLoader.kt:266)
+	at com.intellij.ide.plugins.PluginDescriptorLoader$loadDescriptorsFromDir$descriptorsDeferred$1$1$1.invokeSuspend(PluginDescriptorLoader.kt:1183)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at kotlinx.coroutines.internal.SoftLimitedDispatcher$Worker.run(SoftLimitedDispatcher.kt:130)
+	at kotlinx.coroutines.scheduling.TaskImpl.run(Tasks.kt:89)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler.runSafely(CoroutineScheduler.kt:610)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:1188)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:775)
+	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:762)
+2026-02-23 07:29:52,477 [    435]   WARN - #c.i.i.p.PluginManager - Problems found loading plugins:
+  Plugin 'Mermaid' (com.intellij.mermaid, version=0.0.25+IJ.243) requires IDE build 252.* or older, but the current build is RD-253.30387.148
+  Plugin 'JetBrains AI Assistant' (com.intellij.ml.llm, version=251.26094.80.11) requires IDE build 251.* or older, but the current build is RD-253.30387.148
+2026-02-23 07:29:52,634 [    592]   WARN - #c.j.r.CrossgenRunUtil - C:\Program Files\JetBrains\Rider\r2r\2025.3.2R\EF4776DB0BC0078D1B88EA146B1F3B5\Rider.Backend.ni.exe doesn't exist
+2026-02-23 07:29:53,229 [   1187]   WARN - c.i.o.u.r.overrides - Conflicting registry key definition for key rd.client.patch.engine.enable.unique.document.id: it was defined by plugin com.intellij but redefined by plugin com.intellij. Consider adding overrides="true" for one of the plugins, see the documentation for com.intellij.openapi.util.registry.RegistryKeyBean.overrides for more details.
+2026-02-23 07:29:53,275 [   1233]   WARN - #c.i.o.v.n.p.FSRecords - Records storage [C:\Users\losjo\AppData\Local\JetBrains\Rider2025.3\caches\records.dat] was in use by process [OwnershipInfo{owner pid: 47700, acquired at: 1770587005721}] which is not exist now (wasn't closed properly/crashed?) -> re-acquiring forcibly
+2026-02-23 07:29:53,277 [   1235]   WARN - #c.i.o.v.n.p.PersistentFSLoader - [VFS load problem]: VFS wasn't safely shut down: records.wasClosedProperly is false
+2026-02-23 07:29:53,279 [   1237]   WARN - #c.i.o.v.n.p.PersistentFSLoader - [VFS load problem]: NOT_CLOSED_PROPERLY recovered, no problems remain
+2026-02-23 07:29:53,517 [   1475]   WARN - #c.i.o.e.c.i.EditorColorsManagerImpl - resource not found: colorSchemes/SqlDefault.xml
+2026-02-23 07:29:53,517 [   1475]   WARN - #c.i.o.e.c.i.EditorColorsManagerImpl - resource not found: colorSchemes/sassDefault.xml
+2026-02-23 07:29:53,524 [   1482]   WARN - #c.i.o.e.c.i.EditorColorsManagerImpl - resource not found: colorSchemes/SqlDarcula.xml
+2026-02-23 07:30:07,207 [  15165]   WARN - #c.i.s.SpellCheckerManager - Couldn't load dictionary vue.dic with loader 'class org.jetbrains.vuejs.spellchecker.VueSpellcheckingDictionaryProvider'
+2026-02-23 07:30:08,203 [  16161]   WARN - #c.i.p.i.grpc - IjentId(ijent-0-wsl-Ubuntu) log: ijent::grpc_stdio_server ijent::-grpc::start_process:send_messages_to_and_from_process: Exec error Couldn't run In "/home/joe/qmk_userspace/keyboards/keebio/iris_lm/keymaps/losjoe" execute p4 -zprog=IntelliJ_IDEA_set set: 2: No such file or directory (os error 2)
+2026-02-23 07:30:08,277 [  16235]   WARN - #c.i.p.i.grpc - IjentId(ijent-0-wsl-Ubuntu) log: ijent::grpc_stdio_server ijent::-grpc::start_process:send_messages_to_and_from_process: Exec error Couldn't run In "/home/joe/qmk_userspace/keyboards/keebio/iris_lm/keymaps/losjoe" execute p4 -zprog=IntelliJ_IDEA_info info: 2: No such file or directory (os error 2)
+2026-02-23 07:30:09,051 [  17009]   WARN - #c.i.u.j.JBCefApp - CEF version 137.0.17+gf354b0e+chromium-137.0.7151.104 doesn't match the launcher version 122.1.9+gd14e051+chromium-122.0.6261.94
+2026-02-23 07:30:10,660 [  18618]   WARN - #c.i.o.v.i.l.WatchRootsManager - invalid watch root
+java.nio.file.InvalidPathException: UNC path is missing sharename: \\wsl.localhost
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:132)
+	at java.base/sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at java.base/sun.nio.fs.WindowsPath.parse(WindowsPath.java:95)
+	at java.base/sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:231)
+	at com.intellij.platform.core.nio.fs.DelegatingFileSystem.getPath(DelegatingFileSystem.java:94)
+	at java.base/java.nio.file.Path.of(Path.java:148)
+	at com.intellij.openapi.vfs.impl.local.WatchRootsManager.prepareWatchRoot(WatchRootsManager.java:313)
+	at com.intellij.openapi.vfs.impl.local.WatchRootsManager.updateWatchRoots(WatchRootsManager.java:265)
+	at com.intellij.openapi.vfs.impl.local.WatchRootsManager.replaceWatchedRoots(WatchRootsManager.java:78)
+	at com.intellij.openapi.vfs.impl.local.LocalFileSystemImpl.replaceWatchedRoots(LocalFileSystemImpl.java:206)
+	at com.jetbrains.rider.ideaInterop.vfs.VfsWatchRootManager.D(VfsWatchRootManager.kt:114)
+	at com.jetbrains.rider.util.idea.TimeLogger.section(TimeLogger.kt:13)
+	at com.jetbrains.rider.ideaInterop.vfs.VfsWatchRootManager.update(VfsWatchRootManager.kt:113)
+	at com.jetbrains.rider.ideaInterop.vfs.VfsWatchRootHost.sync(VfsWatchRootHost.kt:61)
+	at com.jetbrains.rider.ideaInterop.vfs.VfsWatchRootHost.D(VfsWatchRootHost.kt:53)
+	at com.jetbrains.rd.util.reactive.BoolPropertyExKt$whenTrue$1.invoke(BoolPropertyEx.kt:12)
+	at com.jetbrains.rd.util.reactive.BoolPropertyExKt$whenTrue$1.invoke(BoolPropertyEx.kt:12)
+	at com.jetbrains.rd.util.reactive.IPropertyBase$view$1$1.invoke(Interfaces.kt:78)
+	at com.jetbrains.rd.util.reactive.IPropertyBase$view$1$1.invoke(Interfaces.kt:77)
+	at com.jetbrains.rd.util.reactive.Signal.fire(Signal.kt:32)
+	at com.jetbrains.rd.util.reactive.Property.setValue(Property.kt:21)
+	at com.jetbrains.rd.util.reactive.Property.set(Property.kt:13)
+	at com.jetbrains.rider.projectView.workspace.WorkspaceModelEvents.D(WorkspaceModelEvents.kt:69)
+	at com.jetbrains.rd.util.reactive.BoolPropertyExKt$whenTrue$1.invoke(BoolPropertyEx.kt:12)
+	at com.jetbrains.rd.util.reactive.BoolPropertyExKt$whenTrue$1.invoke(BoolPropertyEx.kt:12)
+	at com.jetbrains.rd.util.reactive.IPropertyBase$view$1$1.invoke(Interfaces.kt:78)
+	at com.jetbrains.rd.util.reactive.IPropertyBase$view$1$1.invoke(Interfaces.kt:77)
+	at com.jetbrains.rd.util.reactive.Signal.fire(Signal.kt:32)
+	at com.jetbrains.rd.util.reactive.Property.setValue(Property.kt:21)
+	at com.jetbrains.rd.util.reactive.Property.set(Property.kt:13)
+	at com.jetbrains.rider.projectView.workspace.impl.WorkspaceModelUpdater.D(WorkspaceModelUpdater.kt:291)
+	at com.intellij.openapi.application.TransactionGuardImpl.runWithWritingAllowed(TransactionGuardImpl.java:239)
+	at com.intellij.openapi.application.TransactionGuardImpl.access$100(TransactionGuardImpl.java:25)
+	at com.intellij.openapi.application.TransactionGuardImpl$1.run(TransactionGuardImpl.java:201)
+	at com.intellij.openapi.application.impl.ApplicationImpl$7.lambda$run$0(ApplicationImpl.java:605)
+	at com.intellij.concurrency.ThreadContext.installThreadContext(threadContext.kt:305)
+	at com.intellij.openapi.application.impl.ApplicationImpl$7.run(ApplicationImpl.java:600)
+	at com.intellij.openapi.application.impl.AppImplKt.rethrowExceptions$lambda$1(appImpl.kt:83)
+	at com.intellij.util.concurrency.ChildContext$runInChildContext$1.invoke(propagation.kt:167)
+	at com.intellij.util.concurrency.ChildContext$runInChildContext$1.invoke(propagation.kt:167)
+	at com.intellij.util.concurrency.ChildContext.runInChildContext(propagation.kt:173)
+	at com.intellij.util.concurrency.ChildContext.runInChildContext(propagation.kt:167)
+	at com.intellij.util.concurrency.ContextRunnable.lambda$run$0(ContextRunnable.java:26)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.util.concurrency.ContextRunnable.run(ContextRunnable.java:25)
+	at com.intellij.openapi.application.impl.AppImplKt.rethrowExceptions$lambda$2(appImpl.kt:94)
+	at com.intellij.openapi.application.impl.LaterInvocator$1.run(LaterInvocator.java:130)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1$1$0(NonBlockingFlushQueue.kt:334)
+	at com.intellij.openapi.progress.impl.CoreProgressManager.computePrioritized(CoreProgressManager.java:901)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1$1(NonBlockingFlushQueue.kt:333)
+	at com.intellij.concurrency.ThreadContext.resetThreadContext(threadContext.kt:294)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent$lambda$1(NonBlockingFlushQueue.kt:330)
+	at com.intellij.platform.locking.impl.NestedLocksThreadingSupport.tryRunWriteIntentReadAction(NestedLocksThreadingSupport.kt:689)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.runNextEvent(NonBlockingFlushQueue.kt:326)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.flushNow(NonBlockingFlushQueue.kt:305)
+	at com.intellij.openapi.application.impl.NonBlockingFlushQueue.FLUSH_NOW$lambda$0(NonBlockingFlushQueue.kt:167)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:781)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:728)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:722)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:750)
+	at com.intellij.ide.IdeEventQueue.defaultDispatchEvent(IdeEventQueue.kt:664)
+	at com.intellij.ide.IdeEventQueue._dispatchEvent(IdeEventQueue.kt:517)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0$0$0(IdeEventQueue.kt:333)
+	at com.intellij.ide.IdeEventQueueKt.performActivity$lambda$1(IdeEventQueue.kt:1065)
+	at com.intellij.openapi.application.TransactionGuardImpl.performActivity(TransactionGuardImpl.java:109)
+	at com.intellij.ide.IdeEventQueueKt.performActivity(IdeEventQueue.kt:1065)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent$lambda$0(IdeEventQueue.kt:331)
+	at com.intellij.ide.IdeEventQueue.dispatchEvent(IdeEventQueue.kt:371)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:207)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:128)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:117)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:105)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:92)
+2026-02-23 07:30:12,225 [  20183]   WARN - #c.i.g.c.l.GrazieLoginManager - Need explicit activation dialog agreement, so skipping cloud login
+2026-02-23 07:30:12,226 [  20184]   WARN - #c.i.g.c.l.GrazieLoginManager - Need explicit activation dialog agreement, so skipping cloud login
+2026-02-23 07:30:12,523 [  20481]   WARN - #c.i.g.c.l.GrazieLoginManager - Need explicit activation dialog agreement, so skipping cloud login
+2026-02-23 09:15:00,851 [6308809]   WARN - #c.i.p.i.s.IjentSessionMediator - The process IjentId(ijent-0-wsl-Ubuntu) suddenly exited with the code 15
+com.intellij.platform.ijent.IjentUnavailableException$CommunicationFailure: The process IjentId(ijent-0-wsl-Ubuntu) suddenly exited with the code 15
+	at com.intellij.platform.ijent.spi.IjentSessionMediatorKt.ijentProcessExitAwaiter(IjentSessionMediator.kt:334)
+	at com.intellij.platform.ijent.spi.IjentSessionMediatorKt.access$ijentProcessExitAwaiter(IjentSessionMediator.kt:1)
+	at com.intellij.platform.ijent.spi.IjentSessionMediator$Companion$create$awaiterScope$1.invokeSuspend(IjentSessionMediator.kt:152)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at com.intellij.platform.ijent.spi.IjentThreadPool$IjentThreadFactory$newThread$thread$1.run(IjentThreadPool.kt:68)
+2026-02-23 09:15:00,864 [6308822]   WARN - #c.i.o.a.i.ExceptionsKt - Suppressed a frequent exception logged for the 2nd time: The process IjentId(ijent-0-wsl-Ubuntu) suddenly exited with the code 15
+Exception in thread "IjentThreadPool-5" com.intellij.platform.ijent.IjentUnavailableException$CommunicationFailure: The process IjentId(ijent-0-wsl-Ubuntu) suddenly exited with the code 15
+	at com.intellij.platform.ijent.spi.IjentSessionMediatorKt.ijentProcessExitAwaiter(IjentSessionMediator.kt:334)
+	at com.intellij.platform.ijent.spi.IjentSessionMediatorKt.access$ijentProcessExitAwaiter(IjentSessionMediator.kt:1)
+	at com.intellij.platform.ijent.spi.IjentSessionMediator$Companion$create$awaiterScope$1.invokeSuspend(IjentSessionMediator.kt:152)
+	at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)
+	at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at com.intellij.platform.ijent.spi.IjentThreadPool$IjentThreadFactory$newThread$thread$1.run(IjentThreadPool.kt:68)
+	Suppressed: java.lang.Throwable: Rethrown from here
+		at com.intellij.platform.ijent.spi.IjentSessionMediator$Companion.create$lambda$1$1(IjentSessionMediator.kt:114)
+		at kotlinx.coroutines.InvokeOnCompletion.invoke(JobSupport.kt:1534)
+		at kotlinx.coroutines.JobSupport.notifyCompletion(JobSupport.kt:1625)
+		at kotlinx.coroutines.JobSupport.completeStateFinalization(JobSupport.kt:316)
+		at kotlinx.coroutines.JobSupport.finalizeFinishingState(JobSupport.kt:233)
+		at kotlinx.coroutines.JobSupport.continueCompleting(JobSupport.kt:986)
+		at kotlinx.coroutines.JobSupport.access$continueCompleting(JobSupport.kt:22)
+		at kotlinx.coroutines.JobSupport$ChildCompletion.invoke(JobSupport.kt:1268)
+		at kotlinx.coroutines.JobSupport.notifyCompletion(JobSupport.kt:1625)
+		at kotlinx.coroutines.JobSupport.completeStateFinalization(JobSupport.kt:316)
+		at kotlinx.coroutines.JobSupport.finalizeFinishingState(JobSupport.kt:233)
+		at kotlinx.coroutines.JobSupport.tryMakeCompletingSlowPath(JobSupport.kt:946)
+		at kotlinx.coroutines.JobSupport.tryMakeCompleting(JobSupport.kt:894)
+		at kotlinx.coroutines.JobSupport.makeCompletingOnce$kotlinx_coroutines_core(JobSupport.kt:859)
+		at kotlinx.coroutines.AbstractCoroutine.resumeWith(AbstractCoroutine.kt:99)
+		at kotlinx.coroutines.debug.internal.DebugProbesImpl$CoroutineOwner.resumeWith(DebugProbesImpl.kt:545)
+		at kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:47)
+		at kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:98)
+		... 3 more
+	Suppressed: kotlinx.coroutines.internal.DiagnosticCoroutineContextException: [Kernel@dra45195ruamqtmns5vj, Rete(abortOnError=false, commands=capacity=2147483647,data=[onReceive], reteState=kotlinx.coroutines.flow.StateFlowImpl@5f2108b5, dbSource=ReteDbSource(reteState=kotlinx.coroutines.flow.StateFlowImpl@5f2108b5)), DbSourceContextElement(kernel Kernel@dra45195ruamqtmns5vj), ComponentManager(ApplicationImpl@1881809509), com.intellij.codeWithMe.ClientIdContextElementPrecursor@13b50a10, CoroutineName(com.intellij.platform.ide.impl.wsl.ProductionWslIjentManager), StandaloneCoroutine{Cancelling}@7fce0ba7, Dispatchers.Default]
